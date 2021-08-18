@@ -200,7 +200,7 @@ body {
   width: 420px;
 }
 
-.rover-123-container .rover-123-item-container .rover-123-item div{
+.rover-123-container .rover-123-item-container .rover-123-item div:first-child{
   display: flex;
   justify-content: center;
 }
