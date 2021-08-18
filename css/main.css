@@ -17,6 +17,10 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
+h2 {
+  font-size: 32px;
+}
+
 /* Styling */
 .rover-header-link {
   color: black;
@@ -111,6 +115,10 @@ body {
   text-align: center;
 }
 
+.rover-middle-section h2{
+  
+}
+
 .rover-mobile-hero-container {
   display: none;
 }
@@ -135,7 +143,7 @@ body {
   display: flex;
   height: 80px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-header > img{
@@ -147,6 +155,11 @@ body {
   font-size: 24px;
 }
 
+.rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-bottom-container {
+  text-align: initial;
+
+}
+
 .rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-bottom-container .rover-facts li{
   font-size: 22px;
   margin-bottom: 14px;
@@ -154,13 +167,23 @@ body {
 
 .rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-bottom-container .rover-cta {
   background-color: #14a96d;
+  border-radius: 5px;
   height: 25px;
   margin: 0 50px;
 }
 
+
 .rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-bottom-container .rover-cta .rover-cta-btn {
+  display: flex;
   text-decoration: none;
-  color: black;
+  color: white;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-bottom-container .rover-cta:hover {
+  background-color: #36946e;
 }
 
 /* Rover Action */
@@ -228,6 +251,11 @@ body {
 /* ---------------------------------------------Responsive Website---------------------------------------------*/
 
 @media (max-width: 650px) {
+  /* Global */
+  h2 {
+    font-size: 1.5rem;
+  }
+
   /* Headeer Responsive */
   .rover-header-left > nav {
     display: none;
@@ -246,6 +274,10 @@ body {
   }
 
   /* Hero Titile Responsive */
+
+  .rover-hero-container{
+    margin: 2rem auto 2rem;
+  }
 
   .rover-hero-container .rover-hero-title-container {
     justify-content: flex-start;
@@ -268,10 +300,13 @@ body {
   }
 
   /* <!--Rover Facts Container--> */
+
+
   .rover-mobile-hero-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    margin-bottom: 2rem;
   }
 
   .rover-mobile-hero-container .rover-mobile-hero {
@@ -308,17 +343,18 @@ body {
 
   /* Rover Action */
   .rover-action-shot {
-    height: 35rem;
+    height: 25rem;
   }
 
   .rover-action-shot .rover-action-quote-container {
+    padding: 0;
     position: initial;
     width: 100%;
     height: 12rem;
   }
 
   .rover-action-shot .rover-action-quote-container p {
-    font-size: 1;
+    font-size: 1rem;
   }
   
   .rover-action-shot .rover-action-quote-container .rover-quote span {
@@ -333,6 +369,7 @@ body {
 
   .rover-123-container .rover-123-item-container .rover-123-item {
     display: flex;
+    width: 80%;
   }
 
   .rover-123-container .rover-123-item-container .rover-123-item > div img {
@@ -357,4 +394,13 @@ body {
     justify-content: center;
   }
 
+}
+
+@media (max-width: 1250px) {
+  .rover-123-container .rover-123-item-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+  }
 }
