@@ -41,7 +41,7 @@ body {
 }
 
 .rover-header-link:hover{
-  color: #5cf53d;
+  color: #14a96d;
 }
 
 .rover-header-right-mobile {
@@ -59,9 +59,9 @@ body {
   background-image: url("../img/hero.jpg");
   width: 100%;
   height: 400px;
-  background-size: cover;
+  background-size: 100% 200%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 -45px;
 }
 
 .rover-hero-container .rover-hero-title-container {
@@ -83,7 +83,7 @@ body {
 }
 
 .rover-button{
-  background-color: green;
+  background-color: #14a96d;
   width: 400px;
   height: 30px;
   margin-bottom: 15px;
@@ -124,6 +124,11 @@ body {
   margin: 0 80px;
 }
 
+.rover-cta-box .rover-protections a{
+  color: #14a96d;
+  text-decoration: none;
+}
+
 .rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-header {
   background-color: #f3e9e9;
   width: 100%;
@@ -148,7 +153,7 @@ body {
 }
 
 .rover-two-boxes-container .rover-cta-box .rover-cta-container .rover-cta-bottom-container .rover-cta {
-  background-color: #5ff15f;
+  background-color: #14a96d;
   height: 25px;
   margin: 0 50px;
 }
@@ -161,19 +166,34 @@ body {
 /* Rover Action */
 .rover-action-shot {
   background-image: url("../img/lady-with-her-dogs.jpg");
-  background-size: 95% 100%;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: 95% 100%;
   display: relative;
   left: 50px;
   top: 50px;
   height: 700px;
+  margin-top: 70px;
 }
 
 .rover-action-shot .rover-action-quote-container {
   background-color: white;
+  line-height: 1.5;
   width: 370px;
   height: 300px;
   padding: 10px 20px;
+  position: relative;
+  left: 20%;
+  top: -10%;
+}
+.rover-action-shot .rover-action-quote-container .rover-action-dash {
+  border: 2px solid aqua;
+  width: 25%;
+}
+
+.rover-action-shot .rover-action-quote-container p:last-child > a {
+  color: #14a96d;
+  text-decoration: none;
 }
 
 .rover-action-shot .rover-action-quote-container > p, p:last-child {
@@ -288,7 +308,22 @@ body {
 
   /* Rover Action */
   .rover-action-shot {
-    
+    height: 35rem;
+  }
+
+  .rover-action-shot .rover-action-quote-container {
+    position: initial;
+    width: 100%;
+    height: 12rem;
+  }
+
+  .rover-action-shot .rover-action-quote-container p {
+    font-size: 1;
+  }
+  
+  .rover-action-shot .rover-action-quote-container .rover-quote span {
+    font-size: 1.5rem;
+    display: block;
   }
 
   /* rover-123-container */
@@ -300,14 +335,26 @@ body {
     display: flex;
   }
 
-  .rover-123-container .rover-123-item-container .rover-123-item div:first-child img{
-    /* display: flex;
-    flex-direction: column; */
+  .rover-123-container .rover-123-item-container .rover-123-item > div img {
+    height: 5rem;
+    width: 4rem;
+  }
+
+  .rover-123-container .rover-123-item-container .rover-123-item:last-child div img {
+    width: 4rem;
+    height: 4rem;
   }
 
   .rover-123-container .rover-123-item-container .rover-123-item div:last-child {
     display: flex;
     flex-direction: column;
+    padding: 0 1.5rem 0;
+  }
+
+  .rover-123-container .rover-123-item-container .rover-123-item div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }
