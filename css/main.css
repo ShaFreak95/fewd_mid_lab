@@ -375,11 +375,11 @@ h2 {
   }
 
   .show-menu {
-    animation: showmenu .25s ease-in-out;
+    animation: showmenu .5s ease-out;
   }
 
   .hide-menu {
-    animation: hidemenu .25s ease-out;
+    animation: hidemenu .5s ease-out;
   }
 
   .rover-header-right-mobile-menu nav {
@@ -551,21 +551,21 @@ h2 {
 
 @keyframes showmenu {
   0%{
-      transform: translateX(100%);
+      opacity: 0%;
   }
 
   100%{
-      transform: translateX(0%);
+    opacity: 100%;
   }
 }
 
 @keyframes hidemenu {
   0%{
-      transform: translateX(0%);
+    opacity: 100%;
   }
 
   100%{
-      transform: translateX(100%);
+    opacity: 0%;
   }
 }
 

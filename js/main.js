@@ -56,18 +56,17 @@ document.querySelector(".rover-cta-btn").addEventListener("click", function() {
 //1) Make the responsive menu work!
 document.querySelector(".rover-header-right-mobile").addEventListener("click", function() {
     document.querySelector(".rover-header-right-mobile-menu").style.display = "block"
-    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("show-menu", true)
-    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("hide-menu", false)
-    // document.querySelector(".rover-header-right-mobile-menu").classList.add("show-menu")
+    document.querySelector(".rover-header-right-mobile-menu").classList.toggle("show-menu", true)
+    document.querySelector(".rover-header-right-mobile-menu").classList.toggle("hide-menu", false)
     
 })
 
 document.querySelector(".menu-mobile-close-btn").addEventListener("click", function() {
-    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("show-menu", false)
-    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("hide-menu", true)
+    document.querySelector(".rover-header-right-mobile-menu").classList.toggle("show-menu", false)
+    document.querySelector(".rover-header-right-mobile-menu").classList.toggle("hide-menu", true)
     setTimeout(function(){
         document.querySelector(".rover-header-right-mobile-menu").style.display = "none"
-    }, 200)
+    }, 499)
 })
 
 //2) Implement a modal window - "Sign up now" CTA when someone clicks the 'Sign Up' button
