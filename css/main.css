@@ -329,6 +329,34 @@ h2 {
     font-size: 1.5rem;
   }
 
+  /* Modal Box */
+
+  .modal-box {
+    height: 18rem;
+    width: 17rem;
+  }
+
+  /* .modal-box .modal-box-close-button {
+    margin-left: 5px;
+  } */
+
+  .modal-box .modal-box-close-button a{
+    font-size: 1.5rem;
+  }
+
+  .modal-box .modal-box-content {
+    text-align: center;
+  }
+
+  .modal-box .modal-box-content p{
+    font-size: 2rem;
+  }
+
+  .modal-box .modal-box-content div{
+    width: 45%;
+    height: 3rem;
+  }
+
   /* Menu Responsive */
   .rover-header-right-mobile-menu {
     background-color: white;

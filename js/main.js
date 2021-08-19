@@ -67,6 +67,11 @@ document.querySelector(".rover-header-right > a").addEventListener("click", func
     document.querySelector(".modal-box-container").style.display = "flex"
 })
 
+//** When viewed in mobile/tablet display
+document.querySelectorAll(".rover-header-right-mobile-menu nav a")[3].addEventListener("click", function() {
+    document.querySelector(".modal-box-container").style.display = "flex"
+})
+
 document.querySelector(".modal-box-container .modal-box .modal-box-close-button > a").addEventListener("click", function() {
     document.querySelector(".modal-box-container").style.display = "none"
 })
