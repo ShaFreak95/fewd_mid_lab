@@ -56,10 +56,18 @@ document.querySelector(".rover-cta-btn").addEventListener("click", function() {
 //1) Make the responsive menu work!
 document.querySelector(".rover-header-right-mobile").addEventListener("click", function() {
     document.querySelector(".rover-header-right-mobile-menu").style.display = "block"
+    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("show-menu", true)
+    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("hide-menu", false)
+    // document.querySelector(".rover-header-right-mobile-menu").classList.add("show-menu")
+    
 })
 
 document.querySelector(".menu-mobile-close-btn").addEventListener("click", function() {
-    document.querySelector(".rover-header-right-mobile-menu").style.display = "none"
+    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("show-menu", false)
+    document.querySelector(".rover-header-right-mobile-menu nav").classList.toggle("hide-menu", true)
+    setTimeout(function(){
+        document.querySelector(".rover-header-right-mobile-menu").style.display = "none"
+    }, 200)
 })
 
 //2) Implement a modal window - "Sign up now" CTA when someone clicks the 'Sign Up' button
@@ -71,7 +79,7 @@ document.querySelector(".rover-header-right > a").addEventListener("click", func
 document.querySelectorAll(".rover-header-right-mobile-menu nav a")[3].addEventListener("click", function() {
     document.querySelector(".modal-box-container").style.display = "flex"
 })
-
+//** when closing modal box */
 document.querySelector(".modal-box-container .modal-box .modal-box-close-button > a").addEventListener("click", function() {
     document.querySelector(".modal-box-container").style.display = "none"
 })
